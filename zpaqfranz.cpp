@@ -4950,7 +4950,7 @@ int64_t	 g_startdownload = 0;
 int		 g_rd_ultimotempo= 0;
 uint32_t g_rd_errors	 = 0;  // rd: objects that could NOT be deleted
 uint32_t g_rd_lasterror	 = 0; // rd: the FIRST error found (Windows code)
-string	 g_rd_errorpath	 = ""; // rd: ...and on which object
+std::string g_rd_errorpath= ""; // rd: ...and on which object
 int64_t	 g_cdatasize	 = 0;
 unsigned g_htsize		 = 0;
 bool	 g_fakewrite	 = false; // in add() disable write (ransomware)
@@ -5114,7 +5114,7 @@ bool flagturbo;
 bool flagimage;
 bool flagzip;			  // 'zip' command: x, but into ONE single ZIP64 file
 bool flagdeflate;		  // ...and -deflate compresses it, sequentially (method 8)
-string g_zipname= ""; // ...and this is the .zip to be created
+std::string g_zipname= ""; // ...and this is the .zip to be created
 #ifdef _WIN32
 bool flagraw;
 bool flagfindzpaq;
